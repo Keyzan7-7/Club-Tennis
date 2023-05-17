@@ -13,6 +13,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafxmlapplication.JavaFXMLApplication;
 
 /**
@@ -26,6 +27,8 @@ public class RegistrarseController implements Initializable {
     private Button confirmarButton;
     @FXML
     private Button cancelButton;
+    @FXML
+    private TextField textoNombre;
     
     
 

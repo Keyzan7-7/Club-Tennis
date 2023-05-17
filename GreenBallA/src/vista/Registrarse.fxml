@@ -79,7 +79,7 @@
                         <Insets right="130.0" />
                      </padding>
                   </Label>
-                  <TextField maxWidth="-Infinity" prefHeight="25.0" prefWidth="180.0">
+                  <TextField fx:id="textoNombre" maxWidth="-Infinity" prefHeight="25.0" prefWidth="180.0">
                      <VBox.margin>
                         <Insets />
                      </VBox.margin>

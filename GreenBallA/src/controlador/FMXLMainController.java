@@ -11,10 +11,13 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import javafxmlapplication.JavaFXMLApplication;
 import model.Club;
 import model.ClubDAOException;
 import model.Member;
@@ -25,7 +28,8 @@ import model.Member;
  * @author keyza
  */
 public class FMXLMainController implements Initializable {
-
+    
+    Member usr = null;
     @FXML
     private TextField CampoUsuario;
     @FXML
@@ -41,6 +45,7 @@ public class FMXLMainController implements Initializable {
     Club club = null;
     /**
      * Initializes the controller class.
+     * @param url
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -54,28 +59,27 @@ public class FMXLMainController implements Initializable {
 
     @FXML
     private void Registrar(ActionEvent event) throws ClubDAOException, IOException {
-    String nickName = "user99";
-    String password = "123456X";
-    String name = "user";
-    String surname = "99";
-    String credit = "0000111122223333";
-    int svc=123;
-    String tel= "666666666";
-    
-    Member result = club.registerMember(name, surname, tel, nickName, password, credit, svc, null);
-    textoRegistro.setText("Me he fumado un pedazo de porro " + nickName);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/Registrarse.fxml"));
+        Parent root = loader.load();
+        
+        JavaFXMLApplication.setRoot(root);
     }
 
     @FXML
     private void IniciarSesion(ActionEvent event) {
+        try{
         String user = CampoUsuario.getText();
         String pass = CampoContra.getText();
-        Member usr = club.getMemberByCredentials(user, pass);
+        System.out.println(user + pass);
+        usr = club.getMemberByCredentials(user, pass);
         if(usr == null){
         textoRegistro.setText("Usuario o contraseña incorrecta");
         }
         else{
         textoRegistro.setText("Todo Correcto");
+        }
+        }catch(Exception e){
+        textoRegistro.setText("Usuario o contraseña incorrecta");
         }
     }
     
