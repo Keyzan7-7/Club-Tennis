@@ -14,7 +14,10 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafxmlapplication.JavaFXMLApplication;
+import model.Club;
+import model.ClubDAOException;
 
 /**
  * FXML Controller class
@@ -28,8 +31,21 @@ public class RegistrarseController implements Initializable {
     @FXML
     private Button cancelButton;
     @FXML
-    private TextField textoNombre;
-    
+    private TextField nombreField;
+    @FXML
+    private TextField apellidosField;
+    @FXML
+    private TextField telefonoField;
+    @FXML
+    private TextField nicknameField;
+    @FXML
+    private TextField passwordField;
+    @FXML
+    private TextField tarjetaField;
+    @FXML
+    private TextField svcField;
+    @FXML
+    private ImageView imagen;
     
 
     /**
@@ -41,7 +57,15 @@ public class RegistrarseController implements Initializable {
     }    
 
     @FXML
-    private void confirmar(ActionEvent event) {
+    private void confirmar(ActionEvent event) throws IOException, ClubDAOException {
+        
+        //club.registerMember(nombreField.getText(),apellidosField.getText(),telefonoField.getText(),nicknameField.getText()
+          //      ,passwordField.getText(),tarjetaField.getText(),Integer.parseInt(svcField.getText()),imagen.getImage());
+        
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/VistaMain_1.fxml"));
+        Parent root = loader.load();
+        
+        JavaFXMLApplication.setRoot(root);
     }
 
     @FXML
@@ -54,3 +78,4 @@ public class RegistrarseController implements Initializable {
     }
     
 }
+
