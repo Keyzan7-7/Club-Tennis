@@ -28,7 +28,7 @@ public class JavaFXMLApplication extends Application {
         //     - configuracion del stage
         //     - se muestra el stage de manera no modal mediante el metodo show()
         stage.setScene(scene);
-        stage.setTitle("Ejemplo TableView");
+        stage.setTitle("GreenBall");
         stage.show();
     }
 
