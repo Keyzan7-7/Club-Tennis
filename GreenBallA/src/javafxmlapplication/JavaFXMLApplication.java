@@ -5,6 +5,7 @@
  */
 package javafxmlapplication;
 
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -16,7 +17,7 @@ public class JavaFXMLApplication extends Application {
     
     private static Scene scene;
     
-    public static void setRoot(Parent root){
+    public static void setRoot(Parent root) throws IOException{
         scene.setRoot(root);
     }
     
@@ -24,11 +25,11 @@ public class JavaFXMLApplication extends Application {
     public void start(Stage stage) throws Exception {
         //======================================================================
         // 1- creación del grafo de escena a partir del fichero FXML
-        FXMLLoader loader= new  FXMLLoader(getClass().getResource("/vista/VistaMain_1.fxml"));
+        FXMLLoader loader= new  FXMLLoader(getClass().getResource("/vista/Registrarse.fxml"));
         Parent root = loader.load();
         //======================================================================
         // 2- creación de la escena con el nodo raiz del grafo de escena
-        Scene scene = new Scene(root);
+        scene = new Scene(root);
         //======================================================================
         // 3- asiganación de la escena al Stage que recibe el metodo 
         //     - configuracion del stage

@@ -43,10 +43,11 @@ public class RegistrarseController implements Initializable {
 
     @FXML
     private void cancelar(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/VistaMain_1"));
-        //Parent root = loader.load();
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/VistaMain_1.fxml"));
+        Parent root = loader.load();
         
-        cancelButton.getScene().getWindow().hide();
+        JavaFXMLApplication.setRoot(root);
+        //cancelButton.getScene().getWindow().hide();
     }
     
 }
