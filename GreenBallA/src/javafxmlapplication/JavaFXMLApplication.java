@@ -4,17 +4,21 @@
  * and open the template in the editor.
  */
 package javafxmlapplication;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import model.Club;
-import static model.Club.*;
-
 
 
 public class JavaFXMLApplication extends Application {
+    
+    private static Scene scene;
+    
+    public static void setRoot(Parent root){
+        scene.setRoot(root);
+    }
     
     @Override
     public void start(Stage stage) throws Exception {
@@ -31,7 +35,6 @@ public class JavaFXMLApplication extends Application {
         //     - se muestra el stage de manera no modal mediante el metodo show()
         stage.setScene(scene);
         stage.setTitle("GreenBall");
-        Club club = Club.getInstance();
         stage.show();
     }
 
