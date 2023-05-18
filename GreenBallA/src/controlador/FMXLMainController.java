@@ -13,14 +13,18 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafxmlapplication.JavaFXMLApplication;
 import model.Club;
 import model.ClubDAOException;
 import model.Member;
+
 
 /**
  * FXML Controller class
@@ -43,6 +47,8 @@ public class FMXLMainController implements Initializable {
     @FXML
     private Text TextoSesión;
     Club club = null;
+    @FXML
+    private GridPane Pane;
     /**
      * Initializes the controller class.
      * @param url
@@ -82,5 +88,15 @@ public class FMXLMainController implements Initializable {
         textoRegistro.setText("Usuario o contraseña incorrecta");
         }
     }
-    
+    @FXML
+     private void pulsar(ActionEvent event) {
+        Node src = (Node)event.getSource();
+        System.out.println("Row: "+ GridPane.getRowIndex(src));
+        System.out.println("Column: "+ GridPane.getColumnIndex(src));
+        
+    }
+
+    @FXML
+    private void calcularboton(MouseEvent event) {
+    }
 }
