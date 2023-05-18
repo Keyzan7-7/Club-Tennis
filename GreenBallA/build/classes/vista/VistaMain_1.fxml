@@ -3,6 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
@@ -27,22 +28,22 @@
                   </HBox>
                   <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="433.0">
                      <children>
-                        <TextField fx:id="CampoUsuario" prefHeight="26.0" prefWidth="142.0" promptText="Correo electrónico o teléfono">
+                        <TextField fx:id="CampoUsuario" prefHeight="26.0" prefWidth="142.0" promptText="Usuario">
                            <HBox.margin>
                               <Insets right="5.0" />
                            </HBox.margin>
                         </TextField>
-                        <TextField fx:id="CampoContra" prefHeight="26.0" prefWidth="108.0" promptText="Contraseña">
+                        <PasswordField fx:id="CampoContra" prefHeight="26.0" prefWidth="98.0" promptText="Contraseña">
                            <HBox.margin>
                               <Insets right="5.0" />
                            </HBox.margin>
-                        </TextField>
-                        <Button fx:id="BotonSesion" mnemonicParsing="false" onAction="#IniciarSesion" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Iniciar sesión" textFill="#4a6dcc">
+                        </PasswordField>
+                        <Button fx:id="BotonSesion" mnemonicParsing="false" onAction="#IniciarSesion" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Iniciar sesión" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="BotonRegistro" mnemonicParsing="false" onAction="#Registrar" style="-fx-background-color: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Registrarse" textFill="#4a6dcc">
+                        <Button fx:id="BotonRegistro" mnemonicParsing="false" onAction="#Registrar" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Registrarse" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -134,32 +135,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -182,32 +183,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -230,32 +231,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -278,32 +279,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -326,32 +327,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -374,32 +375,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -422,32 +423,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -470,32 +471,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -518,32 +519,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -566,32 +567,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -614,32 +615,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -662,32 +663,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
@@ -710,32 +711,32 @@
                               </Button>
                            </children>
                         </VBox>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" textFill="#4a6dcc">
+                        <Button mnemonicParsing="false" prefHeight="24.0" prefWidth="90.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 0px;" text="Libre" textFill="#4a6dcc">
                            <font>
                               <Font name="Bauhaus 93" size="12.0" />
                            </font>
