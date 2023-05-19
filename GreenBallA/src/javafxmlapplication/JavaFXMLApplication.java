@@ -17,7 +17,7 @@ import static model.Club.*;
 
 public class JavaFXMLApplication extends Application {
     private static Scene scene;
-    Club club;
+    public static Club club;
         public static void setRoot(Parent root) throws IOException{
         scene.setRoot(root);
         }
@@ -27,7 +27,7 @@ public class JavaFXMLApplication extends Application {
            
         //======================================================================
         // 1- creación del grafo de escena a partir del fichero FXML
-            FXMLLoader loader= new  FXMLLoader(getClass().getResource("/vista/VistaMain_1.fxml"));
+        FXMLLoader loader= new  FXMLLoader(getClass().getResource("/vista/VistaMain_1.fxml"));
         Parent root = loader.load();
         //======================================================================
         // 2- creación de la escena con el nodo raiz del grafo de escena
