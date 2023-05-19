@@ -16,6 +16,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
@@ -84,13 +85,13 @@ public class FMXLMainController implements Initializable {
         System.out.println(user + pass);
         usr = club.getMemberByCredentials(user, pass);
         if(usr == null){
-        textoRegistro.setText("Usuario o contraseña incorrecta");
+        textoRegistro.setText("Usuario incorrecto");
         }
         else{
         textoRegistro.setText("Todo Correcto");
         }
         }catch(Exception e){
-        textoRegistro.setText("Usuario o contraseña incorrecta");
+        mostrarAlerta("Usuario o contraseña incorrecta");
         }
     }
     @FXML //metodo que cuando pulsas un botón del Pane te cambia el texto a reservado
@@ -111,5 +112,12 @@ public class FMXLMainController implements Initializable {
 
     @FXML
     private void calcularboton(MouseEvent event) {
+    }
+    public void mostrarAlerta(String mensaje) {
+        Alert alert = new Alert(Alert.AlertType.WARNING);
+        alert.setTitle("Alerta");
+        alert.setHeaderText(null);
+        alert.setContentText(mensaje);
+        alert.showAndWait();
     }
 }
