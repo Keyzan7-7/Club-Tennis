@@ -6,6 +6,7 @@ package controlador;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalDate;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,6 +17,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
@@ -49,6 +51,8 @@ public class FMXLMainController implements Initializable {
     Club club = null;
     @FXML
     private GridPane Pane;
+    @FXML
+    private DatePicker calendario;
     /**
      * Initializes the controller class.
      * @param url
@@ -58,6 +62,7 @@ public class FMXLMainController implements Initializable {
         try {
             // TODO
             club = Club.getInstance();
+            calendario.setValue(LocalDate.now());
         } catch (ClubDAOException | IOException ex) {
             Logger.getLogger(FMXLMainController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -88,12 +93,20 @@ public class FMXLMainController implements Initializable {
         textoRegistro.setText("Usuario o contraseña incorrecta");
         }
     }
-    @FXML
+    @FXML //metodo que cuando pulsas un botón del Pane te cambia el texto a reservado
      private void pulsar(ActionEvent event) {
         Node src = (Node)event.getSource();
         System.out.println("Row: "+ GridPane.getRowIndex(src));
         System.out.println("Column: "+ GridPane.getColumnIndex(src));
-        
+        int x = GridPane.getRowIndex(src);
+        int y = GridPane.getColumnIndex(src);
+        for(Node node : Pane.getChildren()){
+        if (GridPane.getColumnIndex(node) == y && GridPane.getRowIndex(node) == x && node instanceof Button) {
+        Button button = (Button) node;
+        button.setText("Reservado");
+        break;
+    }
+        }
     }
 
     @FXML

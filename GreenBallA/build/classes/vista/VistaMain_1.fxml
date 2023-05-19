@@ -73,7 +73,7 @@
                               <Font name="Bauhaus 93" size="17.0" />
                            </font>
                         </Text>
-                        <DatePicker prefHeight="26.0" prefWidth="119.0" />
+                        <DatePicker fx:id="calendario" prefHeight="26.0" prefWidth="119.0" />
                      </children>
                      <HBox.margin>
                         <Insets left="5.0" top="5.0" />
