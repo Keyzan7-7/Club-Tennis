@@ -88,7 +88,10 @@ public class FMXLMainController implements Initializable {
         textoRegistro.setText("Usuario incorrecto");
         }
         else{
-        textoRegistro.setText("Todo Correcto");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/vista/VistaUser.fxml"));
+        Parent root = loader.load();
+        
+        JavaFXMLApplication.setRoot(root);
         }
         }catch(Exception e){
         mostrarAlerta("Usuario o contraseña incorrecta");
