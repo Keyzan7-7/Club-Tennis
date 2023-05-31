@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.FMXLUserController">
+   <top>
+      <VBox prefHeight="43.0" prefWidth="600.0" style="-fx-background-color: #17B978;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="163.0">
+                     <children>
+                        <Text fill="#4a6dcc" strokeType="OUTSIDE" strokeWidth="0.0" text="GreenBall">
+                           <font>
+                              <Font name="Bauhaus 93" size="21.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="43.0" prefWidth="1.0E8">
+                     <children>
+                        <Button fx:id="BotonReserva" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Reservar" textFill="#4a6dcc">
+                           <font>
+                              <Font name="Bauhaus 93" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="5.0" right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="BotonMisReservas" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Mis Reservas" textFill="#4a6dcc">
+                           <font>
+                              <Font name="Bauhaus 93" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="BotonPerfil" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Perfil" textFill="#4a6dcc">
+                           <font>
+                              <Font name="Bauhaus 93" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="BotonCierreSesión" mnemonicParsing="false" onAction="#cierreSesion" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Cerrar Sesión" textFill="#4a6dcc">
+                           <font>
+                              <Font name="Bauhaus 93" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox prefHeight="288.0" prefWidth="385.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="35.0" prefWidth="600.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text fill="#086972" strokeType="OUTSIDE" strokeWidth="0.0" text="Día" textAlignment="CENTER" wrappingWidth="46.936737060546875">
+                           <font>
+                              <Font name="Bauhaus 93" size="17.0" />
+                           </font>
+                        </Text>
+                        <DatePicker fx:id="calendario" prefHeight="26.0" prefWidth="119.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="5.0" top="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Text fx:id="textoRegistro" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="174.93670272827148" />
+                  <Text fx:id="bienvenida" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="68.5367431640625" />
+                  <Text fx:id="TextoSesión" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="   Has iniciado sesión correctamente" visible="false" wrappingWidth="235.73669052124023" />
+               </children>
+            </HBox>
+            <VBox alignment="CENTER_LEFT" prefHeight="367.0" prefWidth="1.0E7">
+               <children>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="1000000.0" prefWidth="1000000.0">
+                     <children>
+                        <GridPane fx:id="Pane" onMouseClicked="#calcularboton" prefHeight="1.0E8" prefWidth="1.0E8">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1000.0" prefWidth="100000.0" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="1" GridPane.rowIndex="13">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="100000.0" prefWidth="100000.0" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="2" GridPane.rowIndex="13">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="24.0" prefWidth="1.00000009E9" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="3" GridPane.rowIndex="13">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="4" GridPane.rowIndex="13">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="5" GridPane.rowIndex="13">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="10">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" onAction="#pulsar" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: #FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 3px;" text="libre" textFill="#4a6dcc" GridPane.columnIndex="6" GridPane.rowIndex="13">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="9:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="10:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="11:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="12:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="5">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="13:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="6">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="14:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="7">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="15:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="8">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="16:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="9">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="17:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="10">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="18:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="11">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="19:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="12">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="20:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="38.0" prefWidth="50.0" GridPane.rowIndex="13">
+                                 <children>
+                                    <Button minHeight="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" style="-fx-background-color: FFFFFF; -fx-border-color: C7C7C7; -fx-border-radius: 4px;" text="21:00" textFill="#4a6dcc">
+                                       <font>
+                                          <Font name="Bauhaus 93" size="9.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                              </VBox>
+                              <Button mnemonicParsing="false" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Pista 1" textFill="#4a6dcc" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="1.0E7" prefWidth="9.1E9" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Pista 2" textFill="#4a6dcc" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Pista 3" textFill="#4a6dcc" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Pista 4" textFill="#4a6dcc" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Pista 5" textFill="#4a6dcc" GridPane.columnIndex="5">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                              <Button mnemonicParsing="false" prefHeight="1.0E7" prefWidth="1.0E7" style="-fx-background-color: A7FF83; -fx-border-color: #FFFFFF; -fx-border-radius: 5px;" text="Pista 6" textFill="#4a6dcc" GridPane.columnIndex="6">
+                                 <font>
+                                    <Font name="Bauhaus 93" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </GridPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="634.0">
+               <children>
+                  <Button fx:id="BotonAceptar" disable="true" mnemonicParsing="false" onAction="#reservar" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: A7FF83; -fx-border-color: #000000; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Aceptar">
+                     <font>
+                        <Font name="Bauhaus 93" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="BotonCancelar" disable="true" mnemonicParsing="false" onAction="#limpiar" prefHeight="26.0" prefWidth="81.0" style="-fx-background-color: #cc504b; -fx-border-color: #FFFFFF; -fx-border-radius: 20px; -fx-background-radius: 20px;" text="Cancelar" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
