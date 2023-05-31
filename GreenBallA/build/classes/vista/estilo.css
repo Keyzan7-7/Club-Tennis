@@ -1,0 +1,36 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 may. 2023, 18:28:32
+    Author     : keyza
+*/
+.body {
+  -fx-background-image: url(fondo.jpg);
+  -fx-background-repeat: no-repeat;
+  -fx-background-size: cover;
+}
+.loquendo {
+    -fx-font-family: 'Bauhaus 93';
+    -fx-font-size: 15px;
+    -fx-text-fill: #4a6dcc;
+}
+
+.table-view .column-header .label {
+    -fx-font-family: 'Bauhaus 93';
+    -fx-font-size: 15px;
+    -fx-text-fill: #4a6dcc;
+}
+.table-view .table-cell .button {
+    -fx-background-color:  #17B978; 
+    -fx-border-color: #FFFFFF;
+    -fx-border-radius: 5px;
+    -fx-font-family: 'Bauhaus 93';
+    -fx-font-size: 15px;
+    -fx-text-fill: #4a6dcc;
+}
+.table-view .table-cell .button:hover {
+    -fx-background-color: #A7FF83; /* Modificar el color de fondo al pasar el mouse */
+    -fx-border-color: #204d74; /* Modificar el color del borde al pasar el mouse */
+}
